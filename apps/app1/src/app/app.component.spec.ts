@@ -2,6 +2,7 @@ import { HarnessLoader } from '@angular/cdk/testing';
 import { TestbedHarnessEnvironment } from '@angular/cdk/testing/testbed';
 import { TestBed } from '@angular/core/testing';
 import { MatButtonHarness } from '@angular/material/button/testing';
+import { Lib1Module } from '@tusk/lib1';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -9,6 +10,7 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [Lib1Module],
       declarations: [AppComponent],
     }).compileComponents();
     const fixture = TestBed.createComponent(AppComponent);

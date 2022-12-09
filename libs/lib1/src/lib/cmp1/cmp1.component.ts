@@ -1,0 +1,12 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'tusk-cmp1',
+  templateUrl: './cmp1.component.html',
+  styleUrls: ['./cmp1.component.css'],
+})
+export class Cmp1Component implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}
